@@ -1,0 +1,36 @@
+// width
+@mixin r($width){
+	@media only screen and (max-width: $width+ "px"){
+		@content
+	}
+}
+@mixin rmin($width){
+	@media only screen and (min-width: $width+ "px"){
+		@content
+	}
+}
+/**/
+
+@function rem($pixels, $context: $mainFontSize) {
+	@if (unitless($pixels)) {
+		$pixels: $pixels * 1px;
+	}
+
+	@if (unitless($context)) {
+		$context: $context * 1px;
+	}
+
+	@return $pixels / $context * 1rem;
+}
+
+@mixin size($width,$height: $width) {
+	width: $width;
+	height: $height;
+}
+
+@mixin placeholder {
+	::-webkit-input-placeholder {@content}
+	:-moz-placeholder           {@content}
+	::-moz-placeholder          {@content}
+	:-ms-input-placeholder      {@content}
+}

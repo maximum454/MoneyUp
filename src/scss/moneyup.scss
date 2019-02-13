@@ -1,0 +1,14 @@
+/*mixin*/
+@import "base/mixin";
+@import "base/fonts";
+@import "base/class";
+
+/*blocks vendors*/
+@import "~bootstrap/scss/bootstrap";
+
+/*blocks*/
+@import "bloks/header";
+
+body{
+	background-image: url("../img/ME-Logo.png");
+}
