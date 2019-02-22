@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import AppNav from './componets/nav';
 import AppHeader from './componets/header';
-import AppSubscribtions from './componets/subscribtions';
+import AppSubscript from './componets/subscribtions';
 import AppBenefits from './componets/benefits';
 import AppFreechat from './componets/freechat';
 import AppReviews from './componets/reviews';
@@ -16,7 +16,7 @@ Vue.use(BootstrapVue);
 
 Vue.component('AppNav', AppNav);
 Vue.component('AppHeader', AppHeader);
-Vue.component('AppSubscribtions', AppSubscribtions);
+Vue.component('AppSubscript', AppSubscript);
 Vue.component('AppBenefits', AppBenefits);
 Vue.component('AppFreechat', AppFreechat);
 Vue.component('AppReviews', AppReviews);
